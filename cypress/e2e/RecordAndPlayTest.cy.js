@@ -1,7 +1,7 @@
 /// <Reference types="cypress" />
 
 describe('Record and Play Test', () => {
-    it('LoginOrangeHRM.com', () => {
+    it('LoginOrangeHRM.com', function () {
         /* ==== Generated with Cypress Studio ==== */
         cy.visit('https://opensource-demo.orangehrmlive.com/');
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').clear('A');
