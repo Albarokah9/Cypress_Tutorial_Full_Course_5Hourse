@@ -27,4 +27,16 @@ describe('Record and Play Test', () => {
         cy.contains('Hi test test').should('be.visible');
         /* ==== End Cypress Studio ==== */
     });
+
+    /* ==== Test Created with Cypress Studio ==== */
+    it('ResetPasswordOrangeHRM', function () {
+        /* ==== Generated with Cypress Studio ==== */
+        cy.visit('https://opensource-demo.orangehrmlive.com');
+        cy.get('.orangehrm-login-forgot > .oxd-text').click();
+        cy.get('.oxd-input').clear('a');
+        cy.get('.oxd-input').type('Admin');
+        cy.get('.oxd-button--secondary').click();
+        cy.contains('Reset Password link sent successfully').should('be.visible');
+        /* ==== End Cypress Studio ==== */
+    });
 });
