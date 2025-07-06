@@ -1,4 +1,4 @@
-/// <Reference types="cypress" />
+/// <reference types="cypress" />
 
 describe('Record and Play Test', () => {
     it('LoginOrangeHRM.com', function () {
@@ -24,6 +24,7 @@ describe('Record and Play Test', () => {
         cy.get('#input-password').clear('C');
         cy.get('#input-password').type('Cobatest');
         cy.get('.btn').click();
+        cy.contains('Hi test test').should('be.visible');
         /* ==== End Cypress Studio ==== */
     });
 });

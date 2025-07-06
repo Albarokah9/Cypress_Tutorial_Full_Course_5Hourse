@@ -1,4 +1,5 @@
-/// <Reference types="cypress" />
+/// <reference types="cypress" />
+
 describe('Test Suite 1', () => {
     it('My First Test', () => {
         cy.log('Test1 is running');
