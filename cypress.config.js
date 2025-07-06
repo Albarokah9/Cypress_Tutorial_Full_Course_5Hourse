@@ -6,6 +6,5 @@ module.exports = defineConfig({
             // implement node event listeners here
         },
         experimentalStudio: true,
-        watchForFileChanges: false, // Disable file watching to prevent Cypress from automatically re-running tests on file changes
     },
 });
